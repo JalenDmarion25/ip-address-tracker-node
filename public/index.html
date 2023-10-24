@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="./js/script.js" defer></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <div class="main_page">
+    <div class="main_container">
+      <h1>IP Address Tracker</h1>
+      <div class="input_btn">
+        <input id="ip_input" type="text" placeholder="Search for any IP address or domain">
+        <button id="btn_submit"><img src="./images/icon-arrow.svg" alt=""></button>
+      </div>
+    </div>
+    <div class="info">
+      <div class="ip"><h5>Ip Address</h5><p id="ip_data">100.100.100.1</p></div>
+      <div class="loc"><h5>Location</h5><p id="loc_data">Detroit, Michigan</p></div>
+      <div class="time"><h5>Timezone</h5><p id="zone_data">UTC -7:00</p></div>
+      <div class="isp"><h5>ISP</h5><p id="isp_data">Xfinity</p></div>
+    </div>
+    <div id="map" class="map"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+</body>
+</html>

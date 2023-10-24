@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Lato:wght@400;700;900&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Overpass:wght@400;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;400;700&family=Rubik:wght@400;500;700&family=Sofia+Sans+Condensed:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main_page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_container{
+    width: 100%;
+    height: 35%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/pattern-bg-desktop.png');
+    
+}
+
+.main_container input, .main_container button {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container h1{
+    color: white;
+    margin: 20px auto;
+}
+
+.main_container .input_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_btn input{
+    width: 350px;
+    height: 40px;
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.input_btn input.active{
+    background-color: hsl(4, 100%, 78%);
+}
+
+.input_btn button{
+    background-color: black;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 9px 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+.main_container button:hover{
+    background-color: rgb(58, 58, 58); 
+}
+
+.info{
+    position: absolute;
+    display: flex;
+    color: black;
+    background-color: white;
+    width: 75%;
+    height: 120px;
+    border-radius: 10px;
+    justify-content: center;
+    top: 25%;
+    left: 13%;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.info div{
+margin: 40px;
+}
+
+.info h5{
+    color: hsl(0, 0%, 59%);
+}
+
+.info p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 17%);
+}
+
+.info .time{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.map{
+    width: 100%;
+    height: 70%;
+}
+
+@media screen and (max-width: 1420px) {
+    .info p{
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media screen and (max-width: 1020px) {
+
+    .main_container{
+        padding-top: 5px;
+    }
+
+    .main_container h1{
+        color: white;
+        font-size: 1.5rem;
+        margin: 20px auto;
+    }
+
+    .input_btn input{
+        width: 215px;
+        height: 40px;
+        padding: 9px 20px;
+        border: none;
+        outline: none;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .input_btn button{
+        background-color: black;
+        height: 40px;
+        border: none;
+        outline: none;
+        padding: 9px 15px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .info p{
+        font-size: 1.0rem;
+        text-align: center;
+    }
+
+    
+
+    .info{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 240px;
+        width: 230px;
+        align-items: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+    }
+
+    .info h5{
+        align-items: center;
+        text-align: center;
+        color: hsl(0, 0%, 59%);
+    }
+    
+
+    .info div{
+        margin: 8px;
+        }
+    
+}
+
+@media screen and (max-height: 630px) {
+    
+    .main_container{
+        padding-top: 0px;
+        
+    }
+
+    .main_container h1{
+        margin: 5px auto;
+    }
+
+}
